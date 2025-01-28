@@ -20,14 +20,15 @@ Run the following commands to deploy the Kafka broker in KRaft mode:
 git clone https://github.com/q-joshualeong/kafka-single-broker-helm-chart.git
 cd kafka-single-broker-helm-chart
 helm install kafka kafka-single-broker/
-```
+```{{exec}}
 
 #### Step 2: Port-forward the Kafka broker to localhost
 Once the Kafka broker is running, forward port 9092 from the Kubernetes cluster to your local machine:
 
 ```bash
 kubectl port-forward svc/kafka-broker 9092:9092
-```
+```{{exec}}
+
 This will make the Kafka broker accessible on localhost:9092.
 
 
