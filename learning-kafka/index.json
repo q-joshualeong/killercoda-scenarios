@@ -1,0 +1,22 @@
+{
+  "title": "Deploy & Troubleshoot Nginx Helm Chart",
+  "description": "Use a simple one node Kubernetes cluster, you will deploy a Nginx server using a Helm chart. You will learn how to troubleshoot common issues such as imagePullBackoff, health probes, and pod scheduling. ",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Deploy Nginx Helm Chart",
+        "text": "step1/step1.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
