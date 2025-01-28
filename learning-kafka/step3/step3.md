@@ -17,15 +17,13 @@ Run the following command to create a topic named `test-topic` with 3 partitions
 
 ```bash
 kafka-topics.sh --create --topic test-topic --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
-```
+```{{exec}}
 After creating the topic, verify it by listing all topics:
 
 ```bash
 kafka-topics.sh --list --bootstrap-server localhost:9092
-```
+```{{exec}}
 
 ### Explanation
 1. Create a topic: The --create flag creates a new topic named test-topic. The --partitions argument specifies the number of partitions, and --replication-factor specifies the number of replicas (set to 1 for single-broker setups).
 2. List topics: Verifies that the topic has been successfully created and is visible.
-
-Once the topic is created, proceed to Step 4: Producing Messages to a Topic.

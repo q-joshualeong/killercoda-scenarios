@@ -22,6 +22,11 @@ cd kafka-single-broker-helm-chart
 helm install kafka kafka-single-broker/
 ```{{exec}}
 
+Wait for pod to be ready
+```bash
+watch 'kubectl get pods'
+```{{exec}}
+
 #### Step 2: Port-forward the Kafka broker to localhost
 Once the Kafka broker is running, forward port 9092 from the Kubernetes cluster to your local machine:
 
@@ -35,5 +40,3 @@ This will make the Kafka broker accessible on localhost:9092.
 ### Explanation
 1. Deploy Kafka: The Helm chart deploys a Kafka broker configured to run in KRaft mode.
 2. Port-forward Kafka: Port-forwarding allows you to connect to the Kafka broker from your local machine using the Kafka CLI tools.
-
-Once the Kafka broker is running and accessible, proceed to {{Step 2: Installing Kafka CLI Tools}}

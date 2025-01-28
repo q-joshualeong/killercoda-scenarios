@@ -18,14 +18,14 @@ Open two separate terminals and start Kafka Console Consumers with the same cons
 
 ```bash
 kafka-console-consumer.sh --topic test-topic --bootstrap-server localhost:9092 --group group1
-```
+```{{exec}}
 
 #### Step 2: Produce new messages
 In a third terminal, start the Kafka Console Producer and send messages to the test-topic:
 
 ```bash
 kafka-console-producer.sh --topic test-topic --bootstrap-server localhost:9092
-```
+```{{exec}}
 
 Type the following messages and press Enter after each:
 
@@ -38,7 +38,7 @@ Message 2 from producer!
 Run the following command to view the offsets for the group1 consumer group:
 ```bash
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 --describe --group group1
-```
+```{{exec}}
 
 
 #### Step 4: Reset offsets
@@ -46,7 +46,7 @@ Replay all messages by resetting the offset for group1:
 
 ```bash
 kafka-consumer-groups.sh --bootstrap-server localhost:9092 --group group1 --reset-offsets --to-earliest --execute --topic test-topic
-```
+```{{exec}}
 
 ### Explanation
 1. Consumer groups: Multiple consumers in the same group share the load of consuming messages from partitions in a topic.

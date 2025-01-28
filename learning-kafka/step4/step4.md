@@ -17,7 +17,7 @@ Run the following command to start the Kafka Console Producer for the `test-topi
 
 ```bash
 kafka-console-producer.sh --topic test-topic --bootstrap-server localhost:9092
-```
+```{{exec}}
 
 #### Step 2: Send messages to the topic
 Inside the producer terminal, type the following messages one by one and press Enter after each:
@@ -30,8 +30,6 @@ Welcome to Kafka hands-on training!
 1. Start the producer: Launches the Kafka Console Producer, which connects to the broker and allows you to send messages to the specified topic.
 2. Send messages: Messages entered in the producer terminal are sent to the test-topic and stored in Kafka for consumers to retrieve.
 
-
-Once messages are produced, proceed to Step 5: Consuming Messages from a Topic.
 
 
 

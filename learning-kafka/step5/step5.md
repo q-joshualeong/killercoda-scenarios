@@ -17,7 +17,7 @@ Run the following command to start the Kafka Console Consumer for the `test-topi
 
 ```bash
 kafka-console-consumer.sh --topic test-topic --bootstrap-server localhost:9092 --from-beginning
-```
+```{{exec}}
 
 ### Explanation
 1. Start the consumer: Launches the Kafka Console Consumer, which connects to the Kafka broker and retrieves messages from the test-topic starting from the beginning.
