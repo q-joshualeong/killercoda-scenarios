@@ -13,10 +13,13 @@ In this step, you’ll download and set up Kafka CLI tools on your local machine
 
 ### Hands-on Instructions
 
+Before starting, open a new tab as your first tab is now blocked running the port forwarding.
+
 #### Step 1: Download Kafka CLI tools
 Run the following command to download Kafka:
 
 ```bash
+sudo apt install -y openjdk-11-jdk
 sudo mkdir -p /usr/local/kafka
 cd /usr/local/kafka
 sudo wget https://dlcdn.apache.org/kafka/3.9.0/kafka_2.13-3.9.0.tgz
